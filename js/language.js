@@ -12,7 +12,7 @@ const translations = {
 
      'aboutme' : {en: 'About me', pt: ' Sobre mim' },
      'developer&' : {en: 'Developer and designer', pt: 'Programador e designer'},
-    'descricao-profissional' : {en: 'Full-Stack Development Scholar at Growdev through the DESPERTAR.DEV program, with expertise in Java programming language. Additionally, experienced in creating content for social media using Photoshop. At just 17 years old, I have a strong affinity for designing and developing interfaces, continually striving for professionalism and innovation', 
+    'descricao-profissional' : {en: 'Full-Stack Development Scholar at Growdev through the DESPERTAR.DEV program, with experience in Java programming language. Additionally, experienced in creating content for social media using Photoshop. At just 17 years old, I have a strong affinity for designing and developing interfaces, continually striving for professionalism and innovation', 
     pt:'Bolsista em desenvolvimento Full-Stack pela Growdev no programa DESPERTAR.DEV e com conhecimento em linguagem Java. Além de produções para redes sociais utilizando Photoshop. Apenas 17 anos e grande identificação pela criação e desenvolvimento de interfaces, buscando cada vez mais profissionalismo e inovação.'},
 
     'year': { en: 'Year <br> experience', pt: ' Ano <br> experiência'},
@@ -38,7 +38,7 @@ const translations = {
 
     'servicestwo': { en: 'What can I offer you?', pt: ' O que eu posso lhe oferecer?' },
 
-    
+    'educations': { en: 'Education', pt:'Formação'},
 
 
     'myportfolio': { en: 'My portfolio', pt: ' Meu portfolio'},
@@ -48,8 +48,8 @@ const translations = {
     'prices': { en:'Call at the price, 30% discount on your first contact.', pt: 'Chama no precinho, 30% de desconto no seu primeiro contato.'},
     'bora' : { en: 'lets talk!', pt: 'Vamos conversar?' },
 
-    'fala' : { en: 'want to talk to me?', pt: ' Quer falar comigo?' },
-    'boa' : { en: 'arrived at the right place!', pt: ' Chegou ao lugar certo!'},
+    'fala' : { en: 'Want to talk to me?', pt: ' Quer falar comigo?' },
+    'boa' : { en: 'Arrived at the right place!', pt: ' Chegou ao lugar certo!'},
 
     'number' : { en: 'Number', pt: 'Telefone'},
     'adress' : { en: 'Adress', pt: 'Endereço'},
@@ -59,6 +59,22 @@ const translations = {
 
     'designredes' : { en: 'Design for social networks', pt: 'Design para redes sociais'},
     
+    'directs' : { en: '&#169 Marco Antônio. All rights reserved, 2023' , pt: '&#169 Marco Antônio. Todos os direitos reservados. 2023'},
+
+    'messages' : { en: ' Send me a message', pt: ' Enviar a mensagem' },
+
+    'efeito' : { en: 'What does this service give you?', pt: 'O que esse serviço te proporciona?' },
+
+    'one' : { en: 'Organized social networks;', pt: 'Redes Sociais organizadas;'},
+    'two' : { en: 'Professional content production;', pt: 'Produção de conteúdo profissional;'},
+    'three' : { en: 'I transform complex concepts into simple art;', pt: 'Transformo conceitos complexos em artes simples;'},
+    'four' : { en: 'Identifying with the client.', pt: 'Passar identificação com o cliente.'},
+    'five' : { en: 'Leverage your business;', pt: 'Alavancagem do seu negócio;'},
+    'six' : { en: 'Responsive, fast-loading websites;', pt: 'Sites responsivos e de carregamento rápido;'},
+    'seven' : { en: 'Modern Standards;', pt: 'Padrões modernos;'},
+    'eight' : { en: 'Professional and innovative interfaces.', pt: 'Interfaces profissionais e inovadoras;'},
+    'nine' : { en: 'Practical and professional app;', pt: 'App prático e profissinal;'},
+    'ten' : { en: 'Easy for your E-Commerce.', pt: 'Facilidade para seu E-Commerce.'},
 
     'english': { en: 'EN', pt: 'EN' },
     'portuguese': { en: 'PT', pt: 'PT' }
