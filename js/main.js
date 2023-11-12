@@ -2,16 +2,21 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+
+        // Adicione qualquer código adicional necessário para manipular o menu
+
+        // Remova ou ajuste o código de troca de idioma aqui
+        // Exemplo: changeLanguage('en');
+    });
 }
 
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-})
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+    });
 }
 
 /*==================== REMOVER MENU MOBILE ====================*/
