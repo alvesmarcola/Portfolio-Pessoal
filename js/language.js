@@ -1,4 +1,4 @@
-// Objeto de tradução para inglês e português
+
 const translations = {
     'home': { en: 'Home', pt: 'Início' },
     'about': { en: 'About Me', pt: 'Sobre Mim' },
@@ -90,19 +90,14 @@ function changeLanguage(language) {
         // Verifica se a chave existe em translations e se a tradução para o idioma existe
         if (translations[key] && translations[key][language]) {
             const translation = translations[key][language];
-            // Quebra linha
-            element.innerHTML = translation.replace(/\n/g, '<br>');
+
+            // Mantém o ícone se existir
+            const iconElement = element.querySelector('.nav__icon');
+            if (iconElement) {
+                element.innerHTML = `<i class="${iconElement.className}"></i>${translation.replace(/\n/g, '<br>')}`;
+            } else {
+                element.innerHTML = translation.replace(/\n/g, '<br>');
+            }
         }
     });
 }
-
-
-// Aqui faz o site começar em pt
-document.addEventListener("DOMContentLoaded", function () {
-    changeLanguage('pt');
-});
-
-// Aqui troca p inglês
-document.getElementById('nav-toggle').addEventListener('click', function () {
-    changeLanguage('en');
-});
