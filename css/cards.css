@@ -108,11 +108,7 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-  .card__data {
-    padding: 1rem;
-  }
-}
+
 
 /* For medium devices */
 @media screen and (min-width: 768px) {
