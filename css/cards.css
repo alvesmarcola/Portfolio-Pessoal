@@ -135,3 +135,14 @@
     right: -1rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .containers {
+     height: auto; /* ou defina uma altura adequada para dispositivos móveis */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+     display: block;
+  }
+}
