@@ -2,34 +2,19 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-if (navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-
-<<<<<<< HEAD
-
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
     })
-=======
-        // Adicione qualquer código adicional necessário para manipular o menu
-
-        // Remova ou ajuste o código de troca de idioma aqui
-        // Exemplo: changeLanguage('en');
-    });
->>>>>>> 07dc93498d34337a88a6aea34086ce55b285b7f8
 }
 
-if (navClose) {
-    navClose.addEventListener('click', () => {
-<<<<<<< HEAD
+if(navClose){
+    navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
-    })
-=======
-        navMenu.classList.remove('show-menu');
-    });
->>>>>>> 07dc93498d34337a88a6aea34086ce55b285b7f8
+})
 }
 
-// remover menu mobile
+/*==================== REMOVER MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -88,7 +73,7 @@ const modalViews = document.querySelectorAll('.services__modal'),
      // cards
 
      $(document).ready(function() {
-	
+
       $('.card').delay(1800).queue(function(next) {
         $(this).removeClass('hover');
         $('a.hover').removeClass('hover');
@@ -120,18 +105,18 @@ let swiperCards = new Swiper(".card__content", {
     loop: true,
     spaceBetween: 32,
     grabCursor: true,
-  
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       dynamicBullets: true,
     },
-  
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  
+
     breakpoints:{
       600: {
         slidesPerView: 2,
