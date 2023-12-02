@@ -36,7 +36,7 @@
 }
 
 .card__data {
-  background-color: hsl(212, 42%, 20%);
+  background-color: whitesmoke;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -70,7 +70,7 @@
   background-color: var(--first-color);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
-  color: var(--dark-color);
+  color: white;
   font-weight: 600;
 }
 
@@ -108,11 +108,7 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-  .card__data {
-    padding: 1rem;
-  }
-}
+
 
 /* For medium devices */
 @media screen and (min-width: 768px) {
@@ -137,5 +133,16 @@
   }
   .swiper-button-next {
     right: -1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .containers {
+     height: auto; /* ou defina uma altura adequada para dispositivos móveis */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+     display: block;
   }
 }

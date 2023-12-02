@@ -21,7 +21,7 @@
 
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="" class="nav__logo">marco</a>
+            <a href="" class="nav__logo">MARCO</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -43,7 +43,11 @@
                     <li class="nav__item">
                         <a href="#contact" class="nav__link" data-translate="contact"><i class="uil uil-message nav__icon"></i>Contato</a>
                     </li>
-
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="langueges">
+                <ul>
                     <li class="nav__item language">
                         <a href="#" onclick="changeLanguage('en')" data-translate="english">EN</a>
                     </li>
@@ -51,7 +55,6 @@
                         <a href="#" onclick="changeLanguage('pt')" data-translate="portuguese">PT</a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
             <div class="nav__btns">
@@ -84,20 +87,13 @@
                     </div>
 
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blov-img" x="12" y="18" href="./images/me.png"/>
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                <image class="home__blov-img" x="12" y="18" href="./images/me.png"/>
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" x="50" y="-200" href="./images/me.png"/>
                             </g>
                         </svg>
                     </div>
@@ -335,7 +331,7 @@
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
+                    <div class="qualification__button button--flex" data-translate="educations">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Formação
                     </div>
@@ -502,7 +498,7 @@
                         <div class="services__content">
                             <div>
                                 <i class="uil uil-web-grid services__icon"></i></div>
-                                <h3 class="services__title" data-translate="desgin-redes">Design <br> para redes sociais</h3>
+                                <h3 class="services__title" data-translate="designredes">Design <br> para redes sociais</h3>
                             
 
                             <span class="button button--flex button--small button--link services__button">
@@ -512,25 +508,25 @@
 
                             <div class="services__modal">
                                 <div class="services__modal-content">
-                                    <h4 class="services__modal-title">O que esse serviço te proporciona?</h4>
+                                    <h4 class="services__modal-title" data-translate="efeito">O que esse serviço te proporciona?</h4>
                                     <i class="uil uil-times services__modal-close"></i>
 
                                     <ul class="services__modal-services grid">
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Redes Sociais organizadas;</p>
+                                            <p data-translate="one">Redes Sociais organizadas;</p>
                                         </li>
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Produção de conteúdo profissional;</p>
+                                            <p data-translate="two">Produção de conteúdo profissional;</p>
                                         </li>
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Transformo conceitos complexos em artes simples; </p>
+                                            <p data-translate="three">Transformo conceitos complexos em artes simples; </p>
                                         </li>
                                         <li class="services__modal-service">
                                             <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Passar identificação com o cliente.</p>
+                                            <p data-translate="four">Passar identificação com o cliente.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -551,25 +547,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-content">O que meu serviço te proporciona?</h4>
+                                <h4 class="services__modal-content" data-translate="efeito">O que meu serviço te proporciona?</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Avalancagem do seu negócio;</p>
+                                        <p data-translate="five">Avalancagem do seu negócio;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Sites responsivos e de carregamento rápido;</p>
+                                        <p data-translate="six">Sites responsivos e de carregamento rápido;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Padrões Modernos;</p>
+                                        <p data-translate="seven">Padrões Modernos;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>interfaces profissonais e inovadoras.</p>
+                                        <p data-translate="eigtht">interfaces profissonais e inovadoras.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -590,25 +586,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-content">O que meu serviço te proporciona?</h4>
+                                <h4 class="services__modal-content" data-translate="efeito">O que meu serviço te proporciona?</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Avalancagem do seu negócio;</p>
+                                        <p data-translate="five">Avalancagem do seu negócio;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>App prático e profissional;</p>
+                                        <p data-translate="nine">App prático e profissional;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Padrões Modernos;</p>
+                                        <p data-translate="seven">Padrões Modernos;</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Facilidade para seu E-Commerce.</p>
+                                        <p data-translate="ten">Facilidade para seu E-Commerce.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -633,7 +629,7 @@
          
                         <div class="card__data">
                            <h3 class="card__name">Codaí</h3>
-                           <p class="card__description">
+                           <p class="card__description" data-translate="codai">
                               Página de controle de finanças, contém login e cadastro.
                            </p>
          
@@ -649,7 +645,7 @@
          
                         <div class="card__data">
                            <h3 class="card__name">Escola Soneto</h3>
-                           <p class="card__description">
+                           <p class="card__description" data-translate="soneto">
                               Landing page Instituição Soneto de Música, usando apenas HTML, CSS e JS.
                            </p>
          
@@ -665,7 +661,7 @@
          
                         <div class="card__data">
                            <h3 class="card__name">Game Sonic</h3>
-                           <p class="card__description">
+                           <p class="card__description" data-translate="sonic">
                               Game Sonic no mesmo estilo do famoso Dinossauro do Google, muito simples e desenvolvido com HTML, CSS e JS.
                            </p>
          
@@ -681,7 +677,7 @@
          
                         <div class="card__data">
                            <h3 class="card__name">Calculadora de IMC</h3>
-                           <p class="card__description">
+                           <p class="card__description" data-translate="imc">
                               Página informativa sobre IMC e acompanhada de uma calculadora.
                            </p>
          
@@ -697,7 +693,7 @@
          
                         <div class="card__data">
                            <h3 class="card__name">Oxygreen</h3>
-                           <p class="card__description">
+                           <p class="card__description" data-translate="oxygreen">
                               Landing page simples para a consultoria Oxygreen.
                            </p>
          
@@ -727,7 +723,7 @@
                 <div class="project__container container grid">
                     <h2 class="project__title" data-translate="money">Você precisa de um projeto?</h2>
                     <p class="project__description" data-translate="prices">Chama no precinho, 30% de desconto no seu primeiro contato.</p>
-                    <a href="#contact" class="button button--flex button-white" data-translate="bora">
+                    <a href="wa.me//+5554997053527" class="button button--flex button-white" data-translate="bora">
                         Vamos conversar!
                         <i class="uil uil-message project__icon button__icon"></i>
                     </a>
@@ -740,35 +736,33 @@
             <h2 class="section__title" data-translate="fala">Quer falar comigo?</h2>
             <span class="section__subtitle" data-translate="boa">Chegou no lugar certo!</span>
 
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title" data-content="number">Número</h3>
-                            <span class="contact__subtitle">+55 54 99705-3527</span>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-        
+            <div class="contact__container grid">
+                <div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+    
                             <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">Alvesbmarco@gmail.com</span>
+                                <h3 class="contact__title" data-translate="number">Telefone</h3>
+                                <span class="contact__subtitle">+55 54 99705-3527</span>
                             </div>
-
+    
                             <div class="contact__information">
-                                <i class="uil uil-map contact__icon"></i>
+                                <i class="uil uil-envelope contact__icon"></i>
             
                                 <div>
-                                    <h3 class="contact__title" data-translate="adress">Endereço</h3>
-                                    <span class="contact__subtitle">...</span>
+                                    <h3 class="contact__title">Email</h3>
+                                    <span class="contact__subtitle">Alvesbmarco@gmail.com</span>
+                                </div>
+    
+                                <div class="contact__information">
+                                    <i class="uil uil-map contact__icon"></i>
+                
+                                    <div>
+                                        <h3 class="contact__title" data-translate="adress">Endereço</h3>
+                                        <span class="contact__subtitle">...</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
+                </div>
                 <div class="contact__form">
                     <form action="" class="contact__form grid">
                         <div class="contact__inputs grid">
@@ -791,7 +785,7 @@
                         </div>
     
                         <div>
-                            <a href="#" class="button button--flex-1">
+                            <a href="#" class="button button--flex-1" data-translate="messages">
                                 Enviar Mensagem
                                 <i class="uil uil-message button__icon"></i>
                             </a>
@@ -799,7 +793,9 @@
                     </form>
                 </div>
             </div>
+           
         </section>
+    
 
 </main>
 
@@ -837,7 +833,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; Marco Antônio. Todos os direitos reservados.</p>
+            <p class="footer__copy" data-translate="directs">&#169; Marco Antônio. Todos os direitos reservados.</p>
         </div>
     </footer>
 

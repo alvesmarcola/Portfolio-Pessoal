@@ -2,19 +2,21 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+
+
     })
 }
 
-if(navClose){
-    navClose.addEventListener('click', () =>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
-})
+    })
 }
 
-/*==================== REMOVER MENU MOBILE ====================*/
+// remover menu mobile
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){

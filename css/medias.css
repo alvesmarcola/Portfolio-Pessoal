@@ -40,6 +40,7 @@
     .skills__section{
         margin-right: 70px;
     }
+
     
 }
 
@@ -157,4 +158,10 @@
 
 .language{
     margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr; /* Uma coluna para telas menores */
+    }
 }

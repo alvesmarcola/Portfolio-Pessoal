@@ -1,4 +1,4 @@
-// Objeto de tradução para inglês e português
+
 const translations = {
     'home': { en: 'Home', pt: 'Início' },
     'about': { en: 'About Me', pt: 'Sobre Mim' },
@@ -38,7 +38,7 @@ const translations = {
 
     'servicestwo': { en: 'What can I offer you?', pt: ' O que eu posso lhe oferecer?' },
 
-    
+    'educations': { en: 'Education', pt:'Formação'},
 
 
     'myportfolio': { en: 'My portfolio', pt: ' Meu portfolio'},
@@ -48,8 +48,8 @@ const translations = {
     'prices': { en:'Call at the price, 30% discount on your first contact.', pt: 'Chama no precinho, 30% de desconto no seu primeiro contato.'},
     'bora' : { en: 'lets talk!', pt: 'Vamos conversar?' },
 
-    'fala' : { en: 'want to talk to me?', pt: ' Quer falar comigo?' },
-    'boa' : { en: 'arrived at the right place!', pt: ' Chegou ao lugar certo!'},
+    'fala' : { en: 'Want to talk to me?', pt: ' Quer falar comigo?' },
+    'boa' : { en: 'Arrived at the right place!', pt: ' Chegou ao lugar certo!'},
 
     'number' : { en: 'Number', pt: 'Telefone'},
     'adress' : { en: 'Adress', pt: 'Endereço'},
@@ -59,34 +59,52 @@ const translations = {
 
     'designredes' : { en: 'Design for social networks', pt: 'Design para redes sociais'},
     
+    'directs' : { en: '&#169 Marco Antônio. All rights reserved, 2023' , pt: '&#169 Marco Antônio. Todos os direitos reservados. 2023'},
+
+    'messages' : { en: ' Send me a message', pt: ' Enviar a mensagem' },
+
+    'efeito' : { en: 'What does this service give you?', pt: 'O que esse serviço te proporciona?' },
+
+    'one' : { en: 'Organized social networks;', pt: 'Redes Sociais organizadas;'},
+    'two' : { en: 'Professional content production;', pt: 'Produção de conteúdo profissional;'},
+    'three' : { en: 'I transform complex concepts into simple art;', pt: 'Transformo conceitos complexos em artes simples;'},
+    'four' : { en: 'Identifying with the client.', pt: 'Passar identificação com o cliente.'},
+    'five' : { en: 'Leverage your business;', pt: 'Alavancagem do seu negócio;'},
+    'six' : { en: 'Responsive, fast-loading websites;', pt: 'Sites responsivos e de carregamento rápido;'},
+    'seven' : { en: 'Modern Standards;', pt: 'Padrões modernos;'},
+    'eight' : { en: 'Professional and innovative interfaces.', pt: 'Interfaces profissionais e inovadoras;'},
+    'nine' : { en: 'Practical and professional app;', pt: 'App prático e profissinal;'},
+    'ten' : { en: 'Easy for your E-Commerce.', pt: 'Facilidade para seu E-Commerce.'},
+
+    'codai' : {en: 'Finance control page, contains login and registration.' , pt: 'Página de controle de finanças, contém login e cadastro.'},
+    'soneto' : {en: 'Landing page Music Sonnet Institution, using only HTML, CSS and JS.', pt: 'Landing page Instituição Soneto de Música, usando apenas HTML, CSS e JS.'},
+    'sonic' : {en: 'Game Sonic in the same style as the famous Google Dinosaur, very simple and developed with HTML, CSS and JS.', pt: 'Game Sonic no mesmo estilo do famoso Dinossauro do Google, muito simples e desenvolvido com HTML, CSS e JS.'},
+    'imc' :{en:'BMI information page with a calculator.', pt: 'Página informativa sobre IMC e acompanhada de uma calculadora.'},
+    'oxygreen' : {en: 'Simple landing page for the Oxygreen consultancy.', pt: 'Landing page simples para a consultoria Oxygreen.'},
+
 
     'english': { en: 'EN', pt: 'EN' },
     'portuguese': { en: 'PT', pt: 'PT' }
-};
+}
 
 
 
 function changeLanguage(language) {
-    const elements = document.querySelectorAll('[data-translate]');
+    const elements = document.querySelectorAll('[data-translate]')
     elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
+        const key = element.getAttribute('data-translate')
 
         // Verifica se a chave existe em translations e se a tradução para o idioma existe
         if (translations[key] && translations[key][language]) {
-            const translation = translations[key][language];
-            // Quebra linha
-            element.innerHTML = translation.replace(/\n/g, '<br>');
+            const translation = translations[key][language]
+
+            // Mantém o ícone se existir
+            const iconElement = element.querySelector('.nav__icon');
+            if (iconElement) {
+                element.innerHTML = `<i class="${iconElement.className}"></i>${translation.replace(/\n/g, '<br>')}`
+            } else {
+                element.innerHTML = translation.replace(/\n/g, '<br>')
+            }
         }
-    });
+    })
 }
-
-
-// Aqui faz o site começar em pt
-document.addEventListener("DOMContentLoaded", function () {
-    changeLanguage('pt');
-});
-
-// Aqui troca p inglês
-document.getElementById('nav-toggle').addEventListener('click', function () {
-    changeLanguage('en');
-});
