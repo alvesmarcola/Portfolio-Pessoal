@@ -6,14 +6,27 @@ if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
 
+<<<<<<< HEAD
 
     })
+=======
+        // Adicione qualquer código adicional necessário para manipular o menu
+
+        // Remova ou ajuste o código de troca de idioma aqui
+        // Exemplo: changeLanguage('en');
+    });
+>>>>>>> 07dc93498d34337a88a6aea34086ce55b285b7f8
 }
 
 if (navClose) {
     navClose.addEventListener('click', () => {
+<<<<<<< HEAD
         navMenu.classList.remove('show-menu')
     })
+=======
+        navMenu.classList.remove('show-menu');
+    });
+>>>>>>> 07dc93498d34337a88a6aea34086ce55b285b7f8
 }
 
 // remover menu mobile
