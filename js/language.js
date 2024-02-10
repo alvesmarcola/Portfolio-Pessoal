@@ -1,5 +1,4 @@
 
-
 const translations = {
     'home': { en: 'Home', pt: 'Início' },
     'about': { en: 'About Me', pt: 'Sobre Mim' },
@@ -40,7 +39,6 @@ const translations = {
     'servicestwo': { en: 'What can I offer you?', pt: ' O que eu posso lhe oferecer?' },
 
     'educations': { en: 'Education', pt:'Formação'},
-
 
     'myportfolio': { en: 'My portfolio', pt: ' Meu portfolio'},
     'projectss': { en: 'My recent works', pt: 'Meus trabalhos mais recentes'},
@@ -88,8 +86,6 @@ const translations = {
     'portuguese': { en: 'PT', pt: 'PT' }
 }
 
-
-
 function changeLanguage(language) {
     const elements = document.querySelectorAll('[data-translate]')
     elements.forEach(element => {
@@ -109,8 +105,6 @@ function changeLanguage(language) {
         }
     })
 }
-
-
 
 function changeLanguage(language) {
     const elements = document.querySelectorAll('[data-translate]');

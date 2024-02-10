@@ -221,13 +221,14 @@
     width: 50%;
 }
 .skills__js{
-    width: 10%;
+    width: 20%;
 }
 .skills__php,.skills__node,.skills__laravel{
     width: 1%;
 }
 
-.skills__photoshop{
+.skills__photoshop,
+.skills__vue{
     width: 10%;
 }
 
@@ -235,9 +236,8 @@
     width: 5%;
 }
 
-.skills__flutter,
-.shills__flutter__flow{
-    width: 10%;
+.skills__sass{
+    width: 40%;
 }
 
 .skills__close .skills__list{
