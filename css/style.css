@@ -231,17 +231,3 @@
         color: var(--first-color);
       }
 
-      /*Aparecer menu, classe linkada no main.js*/
-      .show-menu{
-        bottom: 0;
-      }
-      
-      ::-webkit-scrollbar{
-        width: 10px;
-
-      }
-
-      ::-webkit-scrollbar-thumb{
-        background-color: #986dff;
-        border-radius: 5px;
-      }
