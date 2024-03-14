@@ -20,7 +20,7 @@
         width: 180px;
     }
 
-    .skills__title{
+    .__title{
         font-size: var(--normal-font-size);
     }
 
@@ -37,7 +37,7 @@
         padding-right: 3.5rem;
     }
 
-    .skills__section{
+    .__section{
         margin-right: 70px;
     }
 
@@ -57,7 +57,7 @@
         justify-self: center;
     }
 
-    .skills__container,
+    .__container,
     .contact__container,
     .footer__container,
     .services__container{
@@ -140,9 +140,7 @@
         text-align: justify;
     }
 
-    .about__info{
-        justify-content: space-between;
-    }
+    
 
     .qualification__tabs{
         justify-content: center;

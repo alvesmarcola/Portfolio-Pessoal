@@ -167,10 +167,10 @@
         font-weight: var(--font-medium);
 
       }
+      
 
-      .nav__logo:hover{
-        color: var(--first-color);
-
+      .nav__logo{
+        width: 60px;
       }
 
       .nav__toggle{
@@ -208,6 +208,7 @@
         align-items: center;
         color: #000;
         font-weight: var(--font-medium);
+        font-size: 1.2rem;
       }
 
       .nav-link:hover{
@@ -231,3 +232,18 @@
         color: var(--first-color);
       }
 
+
+      /*Aparecer menu, classe linkada no main.js*/
+      .show-menu{
+        bottom: 0;
+      }
+      
+      ::-webkit-scrollbar{
+        width: 10px;
+
+      }
+
+      ::-webkit-scrollbar-thumb{
+        background-color: #986dff;
+        border-radius: 5px;
+      }

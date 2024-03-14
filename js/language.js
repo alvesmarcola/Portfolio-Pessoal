@@ -2,7 +2,7 @@
 const translations = {
     'home': { en: 'Home', pt: 'Início' },
     'about': { en: 'About Me', pt: 'Sobre Mim' },
-    'skills': {en: 'Skills', pt: 'Habilidades'},
+    '': {en: '', pt: 'Habilidades'},
     'services' : { en: 'Services', pt: 'Serviços' },
     'contact' : { en: 'Contact', pt: ' Contato ' }, 
     'developer' : { en: 'Front-End Developer | Graphic Designer', pt: 'Desenvolvedor Front-end | Designer Gráfico'},
@@ -18,7 +18,7 @@ const translations = {
     'year': { en: 'Year <br> experience', pt: ' Ano <br> experiência'},
     'project': { en: 'Project <br> completed', pt: ' Projetos <br> Entregues'},
 
-    'skills-area': { en: 'My Skills', pt: ' Habilidades'},
+    '-area': { en: 'My ', pt: ' Habilidades'},
     'tecnical' : { en: 'My technical level', pt: ' Meu nível técnico'},
 
     'skill-two': { en: 'Development Backend', pt: ' Desenvolvimento Backend'},

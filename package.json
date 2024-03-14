@@ -1,14 +1,15 @@
 {
     "devDependencies": {
-      "serve": "^11.2.0"
+        "sass": "^1.72.0",
+        "serve": "^11.2.0"
     },
     "main": "index.html",
     "name": "swiper-css-mode",
     "scripts": {
-      "build": "echo This is a static template, there is no bundler or bundling involved!",
-      "start": "serve"
+        "build": "echo This is a static template, there is no bundler or bundling involved!",
+        "start": "serve"
     },
     "tags": [
-      "swiper"
+        "swiper"
     ]
-  }
+}

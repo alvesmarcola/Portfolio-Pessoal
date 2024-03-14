@@ -25,28 +25,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-
-/*Skills abertura|fechamento*/
-
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-
-    for(i =0; i < skillsContent.length; i++){
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if(itemClass === 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
-
-
 /*Ativar card de serviço*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
@@ -124,3 +102,27 @@ let swiperCards = new Swiper(".card__content", {
       },
     },
   });
+
+
+/* Animations */
+
+  $(document).ready(function() {
+
+    setTimeout(function(){
+        $('.site').addClass('animado');
+    }, 500); // Ajuste o tempo conforme necessário
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const skills = document.querySelectorAll('.skills__info');
+  let delay = 0;
+  skills.forEach((skill, index) => {
+      setTimeout(() => {
+          skill.classList.add('animated');
+      }, delay);
+      delay += 200;
+  });
+});
+
+AOS.init();
